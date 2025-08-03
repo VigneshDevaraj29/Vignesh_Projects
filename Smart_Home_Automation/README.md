@@ -1,6 +1,6 @@
 # 🔐 Smart Home Automation System (SHA) - Verilog HDL
 
-This is a Verilog-based **Smart Home Automation** project developed as part of the *ECE 516 – Mobile Systems and Applications* course at **George Mason University**. The system provides modular security, comfort control, and password-based access features, fully verified via simulation in ModelSim.
+This is a Verilog-based **Smart Home Automation** project developed as part of the **ECE-516 Mobile System and Applications** course at **George Mason University**. The system provides modular security, comfort control, and password-based access features, fully verified via simulation in ModelSim.
 
 ---
 
@@ -61,7 +61,6 @@ The testbench (`Tb_SHA.v`) simulates the following test cases:
 
 - **Simulation:** ModelSim SE
 - **HDL:** Verilog
-- *(Optional: For FPGA Synthesis → Xilinx Vivado / Quartus Prime Lite)*
 
 ---
 
