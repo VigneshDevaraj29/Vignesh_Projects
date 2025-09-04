@@ -7,6 +7,18 @@ This repo serves as a collection of my projects that I have built during my Mast
 
 ## 📂 Projects
 
+### 🔗 [AHB to APB Bridge Controller](./AHB_to_APB_Bridge_Controller/README.md)  
+A Verilog-based **AMBA bus bridge** project developed during my internship at Maven Silicon (VLSI ASIC Design):
+- Connects high-speed AHB bus to low-power APB bus
+- Supports single and burst transfers
+- FSM-based transaction sequencing
+- Includes simulation waveforms and synthesis RTL verification  
+**Tools Used:** ModelSim | Verilog HDL | RTL Viewer  
+
+> 📎 Detailed documentation: [`AHB_to_APB_Bridge_Controller/README.md`](./AHB_to_APB_Bridge_Controller/README.md)
+
+---
+
 ### 🔐 [Smart Home Automation](./Smart_Home_Automation/README.md)
 A modular Verilog-based system that simulates a smart home environment with:
 - Password-controlled security
@@ -17,17 +29,6 @@ A modular Verilog-based system that simulates a smart home environment with:
 
 > 📎 Detailed documentation: [`Smart_Home_Automation/README.md`](./Smart_Home_Automation/README.md)
 
----
-
-### 🔗 [AHB to APB Bridge Controller](./AHB_to_APB_Bridge_Controller/README.md)  
-A Verilog-based **AMBA bus bridge** project developed during my internship at Maven Silicon (VLSI ASIC Design):
-- Connects high-speed AHB bus to low-power APB bus
-- Supports single and burst transfers
-- FSM-based transaction sequencing
-- Includes simulation waveforms and synthesis RTL verification  
-**Tools Used:** ModelSim | Verilog HDL | RTL Viewer  
-
-> 📎 Detailed documentation: [`AHB_to_APB_Bridge_Controller/README.md`](./AHB_to_APB_Bridge_Controller/README.md)
 ---
 
 ## 🧑‍💻 About Me
