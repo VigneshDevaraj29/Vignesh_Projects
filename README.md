@@ -19,7 +19,7 @@ A modular Verilog-based system that simulates a smart home environment with:
 
 ---
 
-🔗 [AHB to APB Bridge Controller](./AHB_to_APB_Bridge_Controller/README.md)  
+### 🔗 [AHB to APB Bridge Controller](./AHB_to_APB_Bridge_Controller/README.md)  
 A Verilog-based **AMBA bus bridge** project developed during my internship at Maven Silicon (VLSI ASIC Design):
 - Connects high-speed AHB bus to low-power APB bus
 - Supports single and burst transfers
