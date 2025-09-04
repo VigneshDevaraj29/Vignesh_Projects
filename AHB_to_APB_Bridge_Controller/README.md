@@ -22,11 +22,11 @@ The AHB-to-APB Bridge is designed to:
 
 | Module File              | Description |
 |---------------------------|-------------|
-| `ahb_master_interface.v` | Generates AHB protocol transactions (single, read, burst) for testing. |
-| `ahb_slave_interface.v`  | Receives AHB signals, pipelines data, and produces APB control signals. |
-| `apb_controller.v`       | Converts AHB-side info into APB signals (`Pselx`, `Penable`, `Pwrite`, `Paddr`, `Pwdata`). |
-| `apb_interface.v`        | Simulates an APB peripheral, responding to read/write transactions. |
-| `bridge_top.v`           | Top-level interconnection between AHB Slave and APB Controller. |
+| `AHB_master_Interface.v` | Generates AHB protocol transactions (single, read, burst) for testing. |
+| `AHB_Slave.v`  | Receives AHB signals, pipelines data, and produces APB control signals. |
+| `APB_Controller.v`       | Converts AHB-side info into APB signals (`Pselx`, `Penable`, `Pwrite`, `Paddr`, `Pwdata`). |
+| `APB_Interface.v`        | Simulates an APB peripheral, responding to read/write transactions. |
+| `Bridge_Top.v`           | Top-level interconnection between AHB Slave and APB Controller. |
 | `tb_ahb_to_apb.v`        | Testbench driving traffic and verifying functionality. |
 
 ---
@@ -57,13 +57,14 @@ The testbench validates:
 
 ### Sample Simulation Log
 
+<img width="1471" height="1028" alt="image" src="https://github.com/user-attachments/assets/6fb7d7a6-9241-4aff-8d07-b6ce269c329f" />
 
 ---
 
 ## 🛠️ Tools Used
 
 - **Simulation:** ModelSim SE  
-- **Synthesis:** RTL Viewer  
+- **Synthesis:** Quatus Prime  
 - **HDL:** Verilog  
 
 ---
