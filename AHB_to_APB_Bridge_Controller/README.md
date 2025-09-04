@@ -1,6 +1,6 @@
 # 🔗 AHB to APB Bridge Controller – Verilog HDL
 
-This project implements an **AHB-to-APB Bridge Controller** in Verilog HDL, developed as part of the **ECE course on Digital System Design**.  
+This project implements an **AHB-to-APB Bridge Controller** in Verilog HDL, developed as part my internship at Maven Silicon on **VLSI ASIC Design**.  
 The bridge ensures smooth communication between the high-performance **AMBA AHB bus** and the low-power **AMBA APB bus**, enabling efficient peripheral interfacing.  
 All modules are fully simulated and verified using **ModelSim**.
 
@@ -52,3 +52,38 @@ The testbench (`tb_ahb_to_apb.v`) validates the following scenarios:
 
 ### Sample Simulation Log (Console Output)
 
+---
+
+## 🛠️ Tools Used
+
+- **Simulation:** ModelSim SE 
+- **Simulation:** Quartus Prime
+- **HDL:** Verilog  
+
+---
+
+## 🚀 How to Run
+
+1. Open the project in **ModelSim**.  
+2. Compile all Verilog modules and `tb_ahb_to_apb.v`.  
+3. Run the testbench using `run -all`.  
+4. Observe **console messages** and **waveform outputs** for verification.  
+
+---
+
+## 🔮 Future Enhancements
+
+- Extend support for **pipelined AHB transfers**  
+- Add **configurable number of APB peripherals**  
+- Implement **synthesis on FPGA (Xilinx/Intel)**  
+- Include **UVM/SystemVerilog testbench** for advanced verification  
+
+---
+
+## 👨‍💻 Author
+
+**Vignesh Bala Kumaran Devaraj**  
+Graduate Student – MS in Computer Engineering  
+George Mason University  
+
+---
