@@ -1,90 +1,54 @@
-#🔗 AHB-to-APB Bridge Controller – Verilog HDL
+# 🔗 AHB to APB Bridge Controller – Verilog HDL
 
-This project implements an AMBA AHB-to-APB Bridge Controller in Verilog HDL. The bridge enables seamless communication between high-speed AHB masters and low-power APB peripherals. Designed as part of my VLSI/SoC design practice, the project focuses on RTL design, finite state machine (FSM) control, and protocol verification.
+This project implements an **AHB-to-APB Bridge Controller** in Verilog HDL, developed as part of the **ECE course on Digital System Design**.  
+The bridge ensures smooth communication between the high-performance **AMBA AHB bus** and the low-power **AMBA APB bus**, enabling efficient peripheral interfacing.  
+All modules are fully simulated and verified using **ModelSim**.
 
-📌 Project Overview
+---
 
-The AHB-to-APB Bridge acts as an interface between the AMBA AHB (Advanced High-performance Bus) and the AMBA APB (Advanced Peripheral Bus).
+## 📌 Project Overview
 
-The system is designed to:
+The AHB-to-APB Bridge is designed to:
 
-Decode AHB addresses and map them to APB peripherals.
+- Interface an **AHB master** (high-speed bus) with multiple **APB peripherals** (low-power bus).
+- Handle **address decoding**, **state transitions**, and **data transfer** across buses.
+- Support **read/write operations** with handshake signals (`PREADY`, `PENABLE`, etc.).
+- Implement a **finite state machine (FSM)** to manage protocol timing.
 
-Generate appropriate control signals (PSEL, PENABLE, PWRITE, etc.).
+---
 
-Handle data transfers from AHB to APB with minimal latency.
+## 📂 Project Structure
 
-Ensure protocol compliance through FSM-based sequencing.
+| Module File              | Description |
+|---------------------------|-------------|
+| `ahb_to_apb_bridge.v`    | Top-level bridge module integrating AHB-to-APB transactions. |
+| `ahb_slave_interface.v`  | Handles AHB signals and generates control signals for the bridge. |
+| `apb_master_interface.v` | Controls APB signals and manages peripheral selection/enable. |
+| `fsm_controller.v`       | Implements FSM for read/write sequencing. |
+| `tb_ahb_to_apb.v`        | Testbench simulating various AHB transactions to APB peripherals. |
 
-📂 Project Structure
-File	Description
-ahb_controller.v	AHB interface logic: captures HADDR, HWRITE, and data signals.
-apb_controller.v	FSM-based APB control logic (IDLE, SETUP, ACCESS).
-bridge_top.v	Top-level wrapper connecting AHB and APB logic.
-tb_bridge.v	Testbench simulating various AHB-to-APB transfer scenarios.
-✅ Features Implemented
+---
 
-✅ FSM-based APB Controller (IDLE → SETUP → ACCESS)
+## ✅ Features Implemented
 
-✅ Address decoding for APB slave selection
+- AHB-to-APB protocol conversion
+- Address decoding for multiple APB peripherals
+- FSM-based control for read/write transfers
+- Handshake support with `PREADY`, `PENABLE`, `PSLVERR`
+- Fully functional **Verilog testbench**
+- Simulation and waveform verification in **ModelSim**
 
-✅ Read/Write transaction handling
+---
 
-✅ Zero-wait state transfer (for simple transactions)
+## 🖥️ Simulation Output
 
-✅ Error handling via default slave response
+The testbench (`tb_ahb_to_apb.v`) validates the following scenarios:
 
-✅ Fully modular RTL (AHB, APB, Top, TB separated)
+1. **Write transaction**: AHB master writes data to APB peripheral  
+2. **Read transaction**: AHB master reads data from APB peripheral  
+3. **Address decode check**: Ensures correct peripheral selection  
+4. **Wait state handling** with `PREADY` low  
+5. **Error response** with `PSLVERR`  
 
-🧪 Simulation Output
+### Sample Simulation Log (Console Output)
 
-The testbench (tb_bridge.v) verifies the following cases:
-
-Write transfer – AHB → APB write transaction with data propagation.
-
-Read transfer – AHB → APB read transaction with data return path.
-
-Invalid address – Default slave response validation.
-
-Sequential transfers – Back-to-back write/read handling.
-
-Control signal validation – Timing correctness for PSEL, PENABLE, PWRITE.
-
-👉 Sample waveform screenshots can be added here.
-
-🔧 Tools Used
-
-HDL: Verilog
-
-Simulation: ModelSim / Vivado Simulator
-
-Version Control: GitHub
-
-🚀 How to Run
-
-Open the project in ModelSim or Vivado.
-
-Compile all RTL modules (ahb_controller.v, apb_controller.v, bridge_top.v) and tb_bridge.v.
-
-Run the testbench using:
-
-run -all
-
-
-Observe console and waveform outputs for functional correctness.
-
-🧠 Future Enhancements
-
-Support wait states for slower APB peripherals
-
-Add burst transfer support from AHB
-
-Parameterized data/address width for scalability
-
-Integration with real FPGA-based APB peripherals
-
-👨‍💻 Author
-
-Vignesh Bala Kumaran Devaraj
-Graduate Student – MS in Computer Engineering
-George Mason University – Fall 2024
