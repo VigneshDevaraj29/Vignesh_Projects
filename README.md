@@ -19,6 +19,19 @@ A Verilog-based **AMBA bus bridge** project developed during my internship at Ma
 
 ---
 
+### 🧠 [FPGA LIF Neuron Model](./FPGA_Based_LIF_Model/README.md) 
+A Verilog-based neuromorphic computing project completed as part of my **ECE 556 course (Spring 2025 semester)**:
+
+- Implements a hardware-efficient **Leaky Integrate-and-Fire (LIF) neuron** on FPGA  
+- Demonstrates real-time **spike generation** with LED output and UART logging  
+- Uses **fixed-point arithmetic** for efficient FPGA synthesis  
+- Validated through **simulation waveforms** and **hardware UART outputs**  
+- Tools Used: Vivado Simulator | Verilog HDL | Xilinx Cmod S7 FPGA  
+
+📎 Detailed documentation: [`FPGA_Based_LIF_Model/README.md`](./FPGA_Based_LIF_Model/README.md)
+
+---
+
 ### 🔐 [Smart Home Automation](./Smart_Home_Automation/README.md)
 A modular Verilog-based system that simulates a smart home environment with:
 - Password-controlled security
