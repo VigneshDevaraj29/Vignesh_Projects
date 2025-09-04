@@ -25,10 +25,8 @@ The FPGA LIF Neuron is designed to:
 
 - Equation:  
   τm dV(t)/dt = -(V(t) - Vrest) + Rm·I(t)
-<img width="630" height="76" alt="image" src="https://github.com/user-attachments/assets/a0c98014-7c5b-477a-9663-9fc184e1a3fd" />
 - Spike condition: 
 When V(t) ≥ Vth, neuron fires
-<img width="508" height="76" alt="image" src="https://github.com/user-attachments/assets/ba2df963-926b-4d31-80d4-fb9b72e060b2" />
 - Key variables:  
   - (V(t)): Membrane potential  
   - (I(t)): Input current  
@@ -152,7 +150,7 @@ resets to 0
 
 ## 👨‍💻 Authors
 
-- Vignesh Bala Kumaran Devaraj  
- 
-
+Vignesh Bala Kumaran Devaraj
+Graduate Student – MS in Computer Engineering
+George Mason University
 ---
