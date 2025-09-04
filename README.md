@@ -1,7 +1,7 @@
 # 💼 Vignesh_Devaraj_Projects
 
 Welcome to my personal and academic project repository!  
-This repo serves as a collection of my projects that I have built during my Master's journey at **George Mason University** and beyond.
+
 A showcase of my academic and personal projects, blending **VLSI, FPGA design, and system-level Verilog development** with hands-on experiments in **neuromorphic computing and digital design**.  
 These projects reflect my journey as a Master's student at **George Mason University**, exploring both **theory and hardware prototypes**.
 
