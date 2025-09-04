@@ -1,4 +1,4 @@
-🔗 AHB-to-APB Bridge Controller – Verilog HDL
+#🔗 AHB-to-APB Bridge Controller – Verilog HDL
 
 This project implements an AMBA AHB-to-APB Bridge Controller in Verilog HDL. The bridge enables seamless communication between high-speed AHB masters and low-power APB peripherals. Designed as part of my VLSI/SoC design practice, the project focuses on RTL design, finite state machine (FSM) control, and protocol verification.
 
