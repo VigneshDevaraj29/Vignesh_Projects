@@ -150,7 +150,7 @@ resets to 0
 
 ## 👨‍💻 Authors
 
-Vignesh Bala Kumaran Devaraj
-Graduate Student – MS in Computer Engineering
-George Mason University
+**Vignesh Bala Kumaran Devaraj**  
+Graduate Student – MS in Computer Engineering  
+George Mason University  
 ---
