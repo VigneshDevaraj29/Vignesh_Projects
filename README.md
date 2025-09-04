@@ -27,7 +27,7 @@ A Verilog-based **AMBA bus bridge** project developed during my internship at Ma
 - Includes simulation waveforms and synthesis RTL verification  
 **Tools Used:** ModelSim | Verilog HDL | RTL Viewer  
 
-> 📎 Detailed documentation: [`AHB_to_APB_Bridge_Controller.md`](.AHB_to_APB_Bridge_Controller/README.md)
+> 📎 Detailed documentation: [`AHB_to_APB_Bridge_Controller/README.md`](.AHB_to_APB_Bridge_Controller/README.md)
 ---
 
 ## 🧑‍💻 About Me
