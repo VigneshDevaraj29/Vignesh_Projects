@@ -21,13 +21,13 @@ The AHB-to-APB Bridge is designed to:
 ## 📂 Project Structure
 
 | Module File              | Description |
-|---------------------------|-------------|
+|--------------------------|-------------|
 | `AHB_master_Interface.v` | Generates AHB protocol transactions (single, read, burst) for testing. |
-| `AHB_Slave.v`  | Receives AHB signals, pipelines data, and produces APB control signals. |
+| `AHB_Slave.v`            | Receives AHB signals, pipelines data, and produces APB control signals. |
 | `APB_Controller.v`       | Converts AHB-side info into APB signals (`Pselx`, `Penable`, `Pwrite`, `Paddr`, `Pwdata`). |
 | `APB_Interface.v`        | Simulates an APB peripheral, responding to read/write transactions. |
 | `Bridge_Top.v`           | Top-level interconnection between AHB Slave and APB Controller. |
-| `tb_ahb_to_apb.v`        | Testbench driving traffic and verifying functionality. |
+| `Top_tb`                 | Testbench driving traffic and verifying functionality. |
 
 ---
 
@@ -72,7 +72,7 @@ The testbench validates:
 ## 🚀 How to Run
 
 1. Open the project in **ModelSim**.  
-2. Compile all Verilog modules and `tb_ahb_to_apb.v`.  
+2. Compile all Verilog modules and `Top_tb`.  
 3. Run the testbench using `run -all`.  
 4. Observe **console messages**, **waveforms**, and **synthesis RTL diagrams** for verification.  
 
